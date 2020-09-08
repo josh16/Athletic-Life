@@ -1,0 +1,237 @@
+
+/*CSS custom properties*/
+:root{
+    --light-blue:#45b8fe;
+    --input-focus-col:#e5e5e5;
+    --bg-col:#030304;
+    --box-col-1:#212122;
+    --box-col-2:#525357;
+    --heading-shadow:#85C1E9;
+    --heading-col:#F2F4F4;
+    --box-col-3:#0A175C;
+    --box-col-4:#030E47;
+    --box-shadow:#cccccc;
+    --bg-col-typo:#191919;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:var(--bg-col);
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+header{
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 30px;
+}
+
+/* NOTE!
+    -For nav menus, the custom css colours are applied inside the
+    'foundation.css' file which is located inside the css folder.
+    - Search 'menu' and there will be a comment 'CUSTOM CSS CODE'
+*/
+h2{
+    font-weight: bold;
+    color:var(--heading-col); 
+    text-align: center;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 6px var(--heading-shadow);
+    font-size: 4vw;
+    /*font-size: calc(80px * 10vw);*/
+}
+main{
+    /*View port sizes*/
+    width:100%;
+    height:100vh;
+}
+footer{
+    color:white;
+    background-image: radial-gradient(var(--box-col-2),var(--box-col-1));
+    border-color: white;
+    padding:10px 2px;
+}
+/*FOOTER TITLE*/
+footer > h2{
+    font-size: 2.5vw;
+}
+.title{
+    border-color: white;
+    background-image: radial-gradient(var(--box-col-2),var(--box-col-1));
+    padding:10px 0px;
+}
+.title>h1{
+    animation: titlePulse 2.5s infinite alternate;
+    text-align: center;
+    font-size: 5vw;
+}
+.AL-logo{
+    margin-left:30px;
+};
+/*////////////////////////////*/
+
+/*OUR GOAL/ACHIEVE/INTRO*/
+.intro-statement{
+    margin:10px 0px;
+    width:80%; height:20vh;
+    padding:5px 0px;
+  
+}
+.intro-statement div{
+    color:white;
+    text-align: center;
+}
+.intro-statement > h2{
+    padding-top:15px;
+}
+
+#ourGoal{
+    color:white;
+}
+.our-goal-msg{
+    color:white;
+    font-size: 1.3em;
+    width:100%;
+    height:80vh;
+    margin-bottom: 50px;
+    background-color:var(--bg-col-typo)
+}
+.achieve-con{
+    width:100%;
+    height:80vh;
+    margin:2px;
+    margin-bottom: 50px;
+    padding:0px 10px;
+}
+
+.arrow-down{
+    animation: elementSizeInc 1.0s infinite alternate;
+}
+/*////////////////////////////*/
+
+/*////////////////////////////*/
+/*MEDIA AND IMGS STYLING*/
+.header-media{
+    color:white;
+}
+.media-view{
+    border:1px solid white;
+    box-shadow: 1px 1px 10px var(--box-shadow);
+    border-style: solid none;
+    border-width:0.3px;
+    border-radius: 3px;
+}
+/*////////////////////////////*/
+
+/*////////////////////////////*/
+/**~USER FORM~**/
+.sign-up-container{
+    margin:0px 3px 50px 3px;
+    border-radius: 5px;
+    color:white; background-color:var(--box-col-2);
+    border-width: 0.3px;
+    border-style:solid;
+    box-shadow: 1px 1px 10px var(--light-blue);
+    padding:10px 0px;
+}
+/*reveal modal popup*/
+#thankYou{
+    border:1px solid white;
+    border-radius: 5px;
+    color:white;
+    text-align: center;
+    background-color:var(--box-col-2);
+}
+label{
+    color:white;
+    font-size: 1.2em;
+}
+.sign-up-form{
+    padding:12px 3px;
+}
+.sign-up-form >input[type=text],select{
+    width:100%;
+}
+input[type=text]:focus{
+    background-color:var(--input-focus-col);
+}
+/*////////////////////////////*/
+
+/**~PROMOTING CONTAINER/LIST~**/
+.promote-icon{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    padding:10px 0px;
+    margin:2px;
+}
+.promote-icon > li{
+    text-decoration: none;
+    list-style: none;
+    padding:20px 0px;
+    border-radius: 2px;
+}
+.promote-icon > li > p{
+    padding-top:15px;
+}
+/*////////////////////////////*/
+/*MEDIA QUERIES*/
+/*900px screen size*/
+@media screen and (max-width: 900px) {
+    h2{
+      font-size: 4.5vw;
+    }
+    footer h2{
+        font-size: 3.5vw;
+    }
+    .intro-statement {
+        margin-top: 40px;
+    }
+    .achieve-con{
+        height:80vh;
+    }
+  }
+  /*500px screen size*/
+ @media screen and (max-width:500px) {
+    h2{
+        font-size: 6.5vw;
+    }
+    footer h2{
+        font-size: 5vw;
+    }
+    .our-goal-msg{
+        font-size: 1.1em;
+    }
+    .intro-statement{
+        margin-top:40px;
+    }
+    .intro-statement div{
+        height:10vh;
+    }
+
+ } 
+/*////////////////////////////*/
+
+ /*////////////////////////////*/
+/* CSS ANIMATIONS */
+/*TODO: PREFIX ANIMATIONS IN ORDER TO SUPPORT OLDER WEB BROWSERS*/
+@keyframes titlePulse{
+    0%{
+        color:white;
+        text-shadow: 2px 2px 2px white;
+    }
+    100%{
+        color:white;
+        text-shadow: 2px 2px 7px var(--light-blue);
+    }
+}
+
+@keyframes elementSizeInc{
+    0%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(1.8);
+    }
+}
+/*////////////////////////////*/
