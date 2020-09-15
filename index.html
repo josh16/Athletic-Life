@@ -18,26 +18,29 @@
   <!--Fitness wallpaper sources-->
   <!--Arrow icons-->
   <!--128px muscle Icons made by <a href="https://www.flaticon.com/free-icon/strong_2843620" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
-
-  <!--****NEW LIST ICONS****-->
-  <!-- APPLE 128PX <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-  <!-- SUPER HERO 128px<div>Icons made by <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-  <!-- CONFIDENCE 128px<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-  <!-- MUSCLE 128PX <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
   <!-- DOWN ARROW ICON 24PX RED<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-  <body class="grid-container full">
-   <header class="grid-x ">
-     <div class="cell">
-       <div class="title grid-x grid-padding-x align-middle">
-         <!--LOGO-->
-          <div class="cell small-2 medium-2 large-1"><!--small-2-->
-            <img class="AL-logo" src="./img/Logo/gym_weights_128px.png" alt="AthleticLife Logo">
-          </div>
-        <!--Title--> <!--small-6-->
-         <h1 class="cell small-9 medium-8 large-offset-2 large-6 ">AthleticLife</h1>
 
-        <!--NAV MENU--> <!--small-4-->
-        <nav class="cell small-12 medium-12 large-3"> 
+  <!--Icons-->
+  <!-- muscle 128px https://www.flaticon.com/free-icon/healthy_2806668?term=strength&page=1&position=1-->
+  <!-- take control 128px https://www.flaticon.com/free-icon/confidence_2646171?term=confidence&page=1&position=2-->
+  <!-- confidence 128px https://www.flaticon.com/free-icon/confidence_2804199?term=confidence&page=1&position=5-->
+  <!--apple 128px https://www.flaticon.com/free-icon/apple_2109645?term=apple&page=1&position=26-->
+  
+  <body class="grid-container full">
+   <header class="grid-x">
+     <div class="cell">
+       <div class="title grid-x grid-padding-x align-middle"> 
+        <div class="cell title-logo">
+          <div class="grid-x grid-padding-x">
+            <div class="cell small-3 medium-2 large-1">
+              <img class="AL-logo" src="./img/Logo/gym_weights_128px.png" alt="AthleticLife Logo">
+            </div>
+            <h1 class="cell  text-center small-5 medium-8 large-offset-2 large-6">AthleticLife</h1>
+          </div>
+        </div>
+  
+        <!--NAV MENU--> 
+        <nav class="nav-small cell small-12 medium-12 "> 
           <!--NAV MENU MED-LARGE ONLY-->
           <ul class="menu simple align-center show-for-medium">
             <li><a href="#ourGoal">Our Goal</a></li> 
@@ -99,15 +102,17 @@
 
   <!--FORM SECTION CONTAINER-->
   <article id="signUp"></article>
-   <main class="grid-x grid-padding-x align-spaced" data-aos="fade-up" data-aos-delay="300">
+  <!--FORM WRAPPER-->
+   <div class="sign-up-container-wrapper grid-x grid-padding-x align-spaced" data-aos="fade-up" data-aos-delay="300">
     <!--SIGN UP NOW-->
-        <div class="cell small-11 medium-10 large-8 sign-up-container">
+        <div class="cell large-8 sign-up-container">
           <h2>SIGN UP NOW</h2>
           <!--Form data section-->
+          <div>
             <form class="sign-up-form"><select id="country" required></select></form> 
-            <!--Sign up button-->
             <button type="submit" class="button large expanded" data-open="thankYou">Sign up</button>
-              <!--pop up msg-->
+          </div>
+          <!--pop up msg-->
             <div class="small reveal" id="thankYou" data-reveal>
               <h2>First step!</h2>
               <p>Congrats on your first step towards a healthy journey!</p>
@@ -117,7 +122,7 @@
               </button> 
             </div>   
       </div>
-    </main>
+    </div>
     <!--Footer section-->
     <footer class="grid-x grid-padding-x align-middle">
         <div class="cell small-6 medium-10 large-10"><h2>AthleticLife™</h2></div>

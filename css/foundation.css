@@ -1003,8 +1003,10 @@ select {
     margin-right: 0;
     margin-left: 0; }
   .button, .button.disabled, .button[disabled], .button.disabled:hover, .button[disabled]:hover, .button.disabled:focus, .button[disabled]:focus {
-    background-color: #2ba6cb;
-    color: #fefefe; }
+    background-color: #45b8fe;/*CUSTOM CSS CODE*/
+    color: #fefefe; 
+    margin-top: 20px;
+  }
   .button:hover, .button:focus {
     background-color: #258dad;
     color: #fefefe; }
@@ -1680,10 +1682,10 @@ a.button:hover, a.button:focus {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; 
-            font-size: 21px; /*FONT SIZE*/
+            font-size: 1.2em; /*FONT SIZE 21px*/
           }
    .menu.simple a:hover{
-    color:#45b8fe; /*CUSTOM CSS CODE*/
+    color:#191919; /*CUSTOM CSS CODE*/
     padding-bottom:3px;
    }   
     .menu.simple li + li {
@@ -2008,8 +2010,8 @@ a.button:hover, a.button:focus {
     border: inset 6px;
     content: '';
     border-bottom-width: 0;
-    border-top-style: solid;
-    border-color: #2ba6cb transparent transparent;
+    border-top-style: solid;/*CUSTOM CSS CODE*/
+    border-color:white transparent transparent;/*#2ba6cb*/
     position: absolute;
     top: 50%;
     margin-top: -3px;
