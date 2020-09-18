@@ -40,12 +40,6 @@ h2{
     text-shadow: 1px 1px 6px var(--heading-shadow);
     font-size: 4vw;
 }
-.sign-up-container-wrapper{
-    width:100%;
-    /*margin-bottom: 30px;*/
-    height:40em;
-    background-color:var(--bg-col-typo);
-}
 footer{
     display: block;
     color:white;
@@ -148,14 +142,19 @@ footer > h2{
     height:35em;
     padding-top:20px;
 }
+.sign-up-container-wrapper{
+    width:100%;
+    height:45em;
+    background-color:var(--bg-col-typo);
+}
 /*reveal modal popup*/
 #thankYou{
-    border:1px solid white;
-    border-radius: 5px;
+    border: none;
     color:white;
     text-align: center;
     background-color:var(--box-col-2);
 }
+
 label{
     color:white;
     font-size: 1.2em;
@@ -167,6 +166,13 @@ label{
 }
 input[type=text]:focus{
     background-color:var(--input-focus-col);
+}
+
+.sign-up-msg{
+    text-align: center; 
+    padding:5px 3px;
+    margin:10px 0px;
+    font-size: 1.2em;
 }
 /*////////////////////////////*/
 
@@ -189,8 +195,7 @@ input[type=text]:focus{
     padding-top:15px;
 }
 /*////////////////////////////*/
-/*MEDIA QUERIES*/
-/*900px screen size*/
+
 @media screen and (max-width: 900px) {
     h2{
       font-size: 4.5vw;
@@ -205,7 +210,7 @@ input[type=text]:focus{
         font-size: 2.5em;
     }
   }
-  /*500px screen size*/
+
  @media screen and (max-width:500px) {
     nav > ul > li{
         font-size: 1em;
@@ -225,7 +230,6 @@ input[type=text]:focus{
 
  /*////////////////////////////*/
 /* CSS ANIMATIONS */
-/*TODO: PREFIX ANIMATIONS IN ORDER TO SUPPORT OLDER WEB BROWSERS*/
 @keyframes titlePulse{
     0%{
         color:white;
